@@ -1,0 +1,171 @@
+:root {
+    --color-bg: #82837d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: var(--color-bg);
+    font-family: "Space Mono", sans-serif;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 2;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 5px 15px 6px 15px;
+    border: 1px solid #000;
+    border-radius: 2.5rem;
+    color: #000;
+    margin-left: 5px;
+    background-color: rgba(130, 131, 125, 0.5);
+    font-family: "Space Mono", sans-serif;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.6) !important;
+    cursor: pointer;
+    font-size: 12px;
+    border: none;
+}
+
+button.active {
+    border: 1px solid #000;
+    box-shadow: none !important;
+}
+
+i {
+    position: relative;
+    top: 1px;
+}
+
+.page-content {
+    width: 100%;
+    height: 100%;
+}
+
+.col {
+    position: absolute;
+}
+
+.product-img {
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-img-wrapper {
+    width: 35%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-copy {
+    width: 50%;
+    height: 200%;
+    left: 50%;
+    padding: 100px 25px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.product-vars {
+    margin: 20px 0;
+}
+
+.product-vars img {
+    width: 150px;
+}
+
+.product-size {
+    display: flex;
+    gap: 10px;
+}
+
+.size {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 100%;
+    font-size: 12px;
+}
+
+button.size-btn {
+    position: relative;
+    margin: 50px 0;
+    width: 50%;
+    padding: 20px;
+    color: #323232;
+}
+
+button.size-btn i {
+    position: absolute;
+    right: 7.5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.other-products {
+    width: 100%;
+}
+
+.product {
+    float: left;
+    width: 33%;
+    margin-bottom: 50px;
+}
+
+.product img {
+    width: 120px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .product-img {
+        width: 100%;
+        height: 50%;
+        z-index: 2;
+    }
+
+    .product-img-wrapper {
+        width: 25%;
+    }
+
+    .product-copy {
+        width: 100%;
+        left: 0;
+        top: 25%;
+    }
+
+    .btn-group {
+        flex-direction: column;
+    }
+}
