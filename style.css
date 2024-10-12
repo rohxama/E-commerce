@@ -23,6 +23,7 @@ body {
     justify-content: space-between;
     padding: 20px;
     z-index: 2;
+    background: var(--color-bg);
 }
 
 .btn-group {
@@ -91,6 +92,7 @@ img {
 
 p {
     font-size: 14px;
+    font-weight: 600
 }
 
 .product-vars {
@@ -117,6 +119,10 @@ p {
     border-radius: 100%;
     font-size: 12px;
 }
+.size:hover, .size-btn:hover{
+    box-shadow: 0 2px 20px rgba(32, 33, 36, 0.6) !important;
+    transition: all ease 0.8s;
+}
 
 button.size-btn {
     position: relative;
@@ -141,12 +147,14 @@ button.size-btn i {
     float: left;
     width: 33%;
     margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .product img {
     width: 120px;
     cursor: pointer;
 }
+
 
 @media (max-width: 900px) {
     .product-img {
